@@ -33,6 +33,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 3. Apply the Canny transform to the blur image to find edges
 4. Keep only the region with lane lines by applying an image mask
 5. Find lines on region of interest using HoughLinesP with parameters rho=1, theta=1/180, threshold=30, min_line_len=10, max_line_gap=10.
+
 After applying these steps to test images I've got the following result:
 ![alt text][image2]
 

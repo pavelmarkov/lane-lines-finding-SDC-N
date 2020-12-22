@@ -19,6 +19,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
+[image2]: ./foo.png "Test my my pipeline on test images"
 
 ---
 
@@ -33,7 +34,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 4. Keep only the region with lane lines by applying an image mask
 5. Find lines on region of interest using HoughLinesP with parameters rho=1, theta=1/180, threshold=30, min_line_len=10, max_line_gap=10.
 After applying these steps to test images I've got the following result:
-[image1]: ./foo.png "Test my my pipeline on test images"
+![alt text][image2]
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...

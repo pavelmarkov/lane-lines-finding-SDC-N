@@ -35,7 +35,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 5. Find lines on region of interest using HoughLinesP with parameters rho=1, theta=1/180, threshold=30, min_line_len=10, max_line_gap=10.
 
 After applying these steps to test images I've got the following result:
-![alt text][image2]
+![pipeline_result](/test_pipeline_images/image_with_lines)
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...

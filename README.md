@@ -50,12 +50,9 @@ After applying these steps to test images I've got the following result:
 ![pipeline_result](/test_pipeline_images/image_with_lines.png)
 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by dividing all lines by their slope into two groups: "left lane lines" (slope is less than zero) and "right lane lines" (slope is greater than zero), then calculating average slope and intercect for each group and using this data to draw only two lines from the bottom of the image (top of coordinate plane) to the center.
 
 ![alt text][image1]
-
 
 ### 2. Identify potential shortcomings with your current pipeline
 

@@ -1,5 +1,4 @@
 # UdacitySelf-DrivingCar
-![GitHub Logo](/foo.png)
 
 # **Finding Lane Lines on the Road** 
 
@@ -29,9 +28,13 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
 1. Convert image to grayscale
+![grayscale_image](/test_pipeline_images/gray.png)
 2. Use GaussianBlur with parameter kernel_size=5 to blur the grayscale image
+![blured_image](/test_pipeline_images/blur.png)
 3. Apply the Canny transform to the blur image to find edges
+![edges](/test_pipeline_images/edges.png)
 4. Keep only the region with lane lines by applying an image mask
+![region_of_interest](/test_pipeline_images/region.png)
 5. Find lines on region of interest using HoughLinesP with parameters rho=1, theta=1/180, threshold=30, min_line_len=10, max_line_gap=10.
 
 After applying these steps to test images I've got the following result:

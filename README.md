@@ -7,6 +7,7 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 [image2]: ./extrapolated_lines.png "Test my my pipeline on test images"
+[image3]: ./test_on_video.gif "Test my my pipeline on test video"
 
 ---
 
@@ -42,7 +43,11 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 Such method gives good results on test images:
 
-![alt text][image2]
+![test on image][image2]
+
+Also, test this method on video:
+
+![test on video][image3]
 
 ### 2. Identifying potential shortcomings with the current pipeline
 

@@ -1,30 +1,18 @@
 # UdacitySelf-DrivingCar
 
-# **Finding Lane Lines on the Road** 
-
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
 **Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
 [image2]: ./extrapolated_lines.png "Test my my pipeline on test images"
 
 ---
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Describing a pipeline and the draw_lines() function.
 
 My pipeline consisted of 5 steps:
 1. Convert image to grayscale
@@ -56,7 +44,7 @@ Such method gives good results on test images:
 
 ![alt text][image2]
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Identifying potential shortcomings with the current pipeline
 
 
 One potential shortcoming would be what would happen when there are other objects in the region of interest, parts of which could detected like lines by "HoughLinesP" function. For example, car ahead or roadside edge. Such lines can affect position and angle of the lane lines.
@@ -64,7 +52,7 @@ One potential shortcoming would be what would happen when there are other object
 Another shortcoming could be winding road. By using "HoughLinesP" function we're looking for straight lines, it could be difficult to find them on winding road with curved lines.
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Suggesting possible improvements to the pipeline
 
 A possible improvement would be to filter detected lines by their slope, since absolute value of lane lines slope lies between 0.5 and 1.5. Such approach allow us to eliminate "noise lines" detected on other objects (cars, sidewalk, roadside) in the region of interest. 
 

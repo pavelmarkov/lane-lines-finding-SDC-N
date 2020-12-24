@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
-[image2]: ./foo.png "Test my my pipeline on test images"
+[image2]: ./extrapolated_lines.png "Test my my pipeline on test images"
 
 ---
 

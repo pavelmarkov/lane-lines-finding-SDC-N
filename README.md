@@ -57,13 +57,13 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when there are other objects in the region of interest, parts of which could detected like lines by "HoughLinesP" function. For example, car ahead or roadside edge. Such lines can affect position and angle of the lane lines.
 
-Another shortcoming could be ...
+Another shortcoming could be winding road. Since by using "HoughLinesP" function we're looking for straight lines, it could be difficult to find them on winding road with curved lines.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to filter detected lines by their slope. Since absolute value of lane lines slope lies between 0.5 and 1.5. Such approach allow us to eliminate "noise lines" detected on other objects (cars, sidewalk, roadside) in the region of interest. 
 
-Another potential improvement could be to ...
+Another potential improvement could be implementing a method for finding curved lines on image.

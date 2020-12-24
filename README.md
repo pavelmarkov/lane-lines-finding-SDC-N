@@ -47,7 +47,7 @@ Such method gives good results on test images:
 
 Also, test this method on video:
 
-<img src="./test_on_video.gif" width="40" height="40" />
+<img src="./test_on_video.gif" width="120" height="80" />
 
 ### 2. Identifying potential shortcomings with the current pipeline
 

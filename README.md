@@ -52,7 +52,9 @@ After applying these steps to test images I've got the following result:
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by dividing all lines by their slope into two groups: "left lane lines" (slope is less than zero) and "right lane lines" (slope is greater than zero), then calculating average slope and intercect for each group and using this data to draw only two lines from the bottom of the image (top of coordinate plane) to the center.
 
-![alt text][image1]
+Such method gives good results on test images:
+
+![alt text][image2]
 
 ### 2. Identify potential shortcomings with your current pipeline
 

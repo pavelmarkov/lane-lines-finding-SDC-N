@@ -6,8 +6,8 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-[image2]: ./extrapolated_lines.png "Test my my pipeline on test images"
-[image3]: ./test_on_video.gif "Test my my pipeline on test video"
+[image2]: ./images_for_report/extrapolated_lines.png "Test my my pipeline on test images"
+[image3]: ./images_for_report/test_on_video.gif "Test my my pipeline on test video"
 
 ---
 
@@ -18,25 +18,25 @@ The goals / steps of this project are the following:
 My pipeline consisted of 5 steps:
 1. Convert image to grayscale
 
-![grayscale_image](/test_pipeline_images/gray.png)
+![grayscale_image](/images_for_report/gray.png)
 
 2. Use GaussianBlur with parameter kernel_size=5 to blur the grayscale image
 
-![blured_image](/test_pipeline_images/blur.png)
+![blured_image](/images_for_report/blur.png)
 
 3. Apply the Canny transform to the blur image to find edges
 
-![edges](/test_pipeline_images/edges.png)
+![edges](/images_for_report/edges.png)
 
 4. Keep only the region with lane lines by applying an image mask
 
-![region_of_interest](/test_pipeline_images/region.png)
+![region_of_interest](/images_for_report/region.png)
 
 5. Find lines on region of interest using HoughLinesP with parameters rho=1, theta=1/180, threshold=30, min_line_len=10, max_line_gap=10.
 
 After applying these steps to test images I've got the following result:
 
-![pipeline_result](/test_pipeline_images/image_with_lines.png)
+![pipeline_result](/images_for_report/image_with_lines.png)
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by dividing all lines by their slope into two groups: "left lane lines" (slope is less than zero) and "right lane lines" (slope is greater than zero), then calculating average slope and intercect for each group and using this data to draw only two lines from the bottom of the image (top of coordinate plane) to the center.
@@ -47,7 +47,7 @@ Such method gives good results on test images:
 
 Also, test this method on video:
 
-<img src="./test_on_video.gif" width="426" height="240" />
+<img src="./images_for_report/test_on_video.gif" width="426" height="240" />
 
 ### 2. Identifying potential shortcomings with the current pipeline
 

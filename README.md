@@ -52,7 +52,7 @@ Also, test this method on video:
 ### 2. Identifying potential shortcomings with the current pipeline
 
 
-One potential shortcoming would be what would happen when there are other objects in the region of interest, parts of which could detected like lines by "HoughLinesP" function. For example, car ahead or roadside edge. Such lines can affect position and angle of the lane lines.
+One potential shortcoming would be what would happen when there are other objects in the region of interest, parts of which could be detected like lines by "HoughLinesP" function. For example, car ahead or roadside edge. Such lines can affect position and angle of the lane lines.
 
 Another shortcoming could be winding road. By using "HoughLinesP" function we're looking for straight lines, it could be difficult to find them on winding road with curved lines.
 

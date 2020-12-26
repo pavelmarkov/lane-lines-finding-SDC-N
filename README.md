@@ -45,9 +45,9 @@ Such method gives good results on test images:
 
 ![test on image][image2]
 
-Also, test this method on video:
+<!---Also, test this method on video:-->
 
-<img src="./images_for_report/test_on_video.gif" width="426" height="240" />
+<!---<img src="./images_for_report/test_on_video.gif" width="426" height="240" />-->
 
 ### 2. Identifying potential shortcomings with the current pipeline
 
